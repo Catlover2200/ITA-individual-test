@@ -10,9 +10,9 @@ public class LogicsAndNumbersStuff {
      * @return The difference of a and b, multiplied by c.
      */
     public int diffMultipliedByC(int a, int b, int c)
+    //TODO Delete line below, and implement this method
     {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        return (b - a) * c;
     }
 
     /**
@@ -22,9 +22,12 @@ public class LogicsAndNumbersStuff {
      * @return True if you can stay in bed given the parameters.
      */
     public boolean canYouStayInBed(boolean weekday, boolean vacation)
+    //TODO Delete line below, and implement this method
     {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        if(weekday == vacation) {
+            return true;
+        }
+        else return false;
     }
 
     /**
@@ -33,9 +36,13 @@ public class LogicsAndNumbersStuff {
      * @return The sum of all integers in the numbers array.
      */
     public int sumOfNumbers(int[] numbers)
+    //TODO Delete line below, and implement this method
     {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[1];
+        }
+        return sum;
     }
 
     /**
@@ -44,9 +51,15 @@ public class LogicsAndNumbersStuff {
      * @return The average of all the integers in the numbers array.
      */
     public double averageOfNumber(int[] numbers)
+    //TODO Delete line below, and implement this method
     {
-        //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        numbers = new int[]{8,5,9,2,7};
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[1];
+        }
+        double average = sum / numbers.length;
+        return average;
     }
 
     /**

@@ -1,10 +1,10 @@
 package assignment3;
 /**
- * 
+ *
  * @author easv
- * 
+ *
  * Do not modify. Nothing to do.
- * 
+ *
  */
 public class TeamMember {
     private int id;

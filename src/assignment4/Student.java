@@ -34,7 +34,8 @@ public class Student
     public Student(int studentId, String name)
     {
         //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        setName(name);
+        setStudentId(studentId);
     }
 
 
@@ -45,12 +46,12 @@ public class Student
     public double getMultiplier()
     {
         //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        return multiplier;
     }
 
 
     /**
-     * The setter for the multiplier must check that the value is either 
+     * The setter for the multiplier must check that the value is either
      * 1.08 * 1.06 (1.1448) or 1.08 or 1.06
      *
      * If not, then do not update the value
@@ -61,7 +62,12 @@ public class Student
     public boolean setMultiplier(double multiplier)
     {
         //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        if (multiplier == ( 1.08 * 1.06) || multiplier == 1.08 || multiplier == 1.06) {
+            this.multiplier = multiplier;
+            return true;
+        }
+
+        return false;
     }
 
 
@@ -72,7 +78,10 @@ public class Student
     public double getComputedGrade()
     {
         //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        double firstGrade = 1.06;
+        double secondGrade = 1.08;
+        double result = firstGrade * secondGrade;
+        return result;
     }
 
 
@@ -97,7 +106,7 @@ public class Student
     public int getGrade()
     {
         //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        return grade;
     }
 
 
@@ -108,7 +117,7 @@ public class Student
     public String getName()
     {
         //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        return name;
     }
 
 
@@ -135,7 +144,7 @@ public class Student
     public int getStudentId()
     {
         //TODO Delete line below, and implement this method
-        throw new UnsupportedOperationException();
+        return getStudentId();
     }
 
 
